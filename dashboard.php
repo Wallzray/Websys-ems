@@ -19,7 +19,7 @@ if($num < 1){
     $w= mysqli_query($con, $p);
     $n= mysqli_num_rows($w);
    for($a=1; $a <= $n; $a++){
-    $rp= mysqli_($w);
+    $rp= mysqli_fetch_row($w);
     $rpassword= $rp[1];
     $rempno= $rp[0];
 }
